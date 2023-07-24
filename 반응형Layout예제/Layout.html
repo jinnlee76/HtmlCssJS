@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout3</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        #body{background-color: #f325f5;}
+        #wrap{width:1200px; margin: 0 auto;}
+        header{width:100%; height: 150px;background-color: #9575cd;}
+        aside{float:left;width:30%;height: 700px;background-color: #7e57c2; }
+        section{float:left;width:70%;height: 700px;background-color: #673ab7;}
+        footer{clear:both;width:100%;height: 150px;background-color:#5e35b1;}
+        /* 화면 너비 0~1200px */
+        @media (max-width: 1220px) {
+            #wrap{width:95%;}
+        }
+        /* 테블릿 */
+        @media (max-width: 768px) {
+            #wrap{width:100%;}
+        }
+        /* 모바일*/
+        @media (max-width: 480px) {
+            #wrap{width:100%;}
+            header{height: 300px;}
+            aside{float:none;width: 100%;height: 300px;}
+            section{float:none;width: 100%;height:300px;}
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <header></header>
+        <aside></aside>
+        <section></section>
+        <footer></footer>
+    </div>
+    
+</body>
+</html>

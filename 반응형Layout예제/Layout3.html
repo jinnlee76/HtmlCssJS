@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout3</title>
+</head>
+<style>
+     * {
+            padding: 0;
+            margin: 0;
+        }
+    #body{background-color: #f325f5;}
+    #wrap{width: 1200px;margin: 0 auto;}
+    .header{width: 100%;height: 100px;background-color: #9575cd;}
+    .aside{float:left;width:30%;height: 900px;background-color: #7e57c2;}
+    .article1{float:left;width:70%;height: 300px;background-color:#5e35b1;}
+    .article2{float:left;width:70%;height: 300px;background-color:#4fc3f7;}
+    .article3{float:left;width:70%;height: 300px;background-color:#0288d1;}
+    .footer{clear:both;width: 100%;height: 100px;background-color: #9575cd;}
+    
+    /* 화면 너비 0~1200px */
+    @media (max-width: 1220px) {
+            #wrap{width:95%;}
+            .article1{height: 450px;}
+            .article2{height: 450px;}
+            .article3{float:none;width:100%;}
+        }
+    /* 테블릿 */
+    @media (max-width: 768px) {
+            .aside{width:100%;height: 300px;}
+            .article1{width: 50%;}
+            .article2{width: 50%;}
+        }
+    /* 모바일*/
+    @media (max-width: 480px) {
+            .article1{width: 100%;}
+            .article2{width: 100%;}
+        }
+</style>
+
+<body>
+    <div id="wrap">
+        <header class="header"></header>
+        <aside class="aside"></aside>
+        <section class="article1"></section>
+        <section class="article2"></section>
+        <section class="article3"></section>
+        <footer class="footer"></footer>
+    </div>
+</body>
+
+</html>

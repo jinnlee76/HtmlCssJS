@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout4</title>
+</head>
+<style>
+     * {
+            padding: 0;
+            margin: 0;
+        }
+    #body{background-color: #f325f5;}
+    #wrap{width: 1200px;margin: 0 auto;}
+    header{width: 100%;height: 100px;background-color: #9575cd;}
+    article{width:100%;height: 300px;background-color:#5e35b1;}
+    section{overflow:hidden;width:90%;background-color:#4fc3f7; padding:5%}
+    section > div{
+        width: 18%; float: left; height:100px;background-color: #ff9800;
+        margin: 1%;
+        border-radius: 5%;
+    }
+    footer{width: 100%;height: 100px;background-color: #9575cd;}
+
+
+    /* 화면 너비 0~1200px */
+    @media (max-width: 1220px) {
+            #wrap{width:100%;}
+            section > div {
+                width: 23%;
+            }
+            section > div:nth-child(5n) { display:none; }
+        }
+    /* 테블릿 */
+    @media (max-width: 768px) {
+        section > div {
+                width: 31.333%;
+            }
+        section > div:nth-child(5) {display:block;}
+        }
+    /* 모바일*/
+    @media (max-width: 480px) {
+        section > div {
+                width: 48%;
+            }
+        section > div:nth-child(5n) { display:block; }
+        }
+
+</style>
+<body>
+    <div id="wrap">
+        <header></header>
+        <article></article>
+        <section>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </section>
+        <footer></footer>
+    </div>
+</body>
+</html>

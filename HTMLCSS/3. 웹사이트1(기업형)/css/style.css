@@ -1,0 +1,109 @@
+ul{
+    list-style: none;
+}
+
+#header{background: url(../img/header.jpg) repeat-x center top;}
+
+.container{width: 1200px; margin: 0 auto;background: rgb(0.0.0.0.3)}
+
+.header{}
+.header .header_menu{text-align:right;}
+.header .header_menu a{
+    color: #fff; 
+    padding: 8px 0 6px 10px; 
+    display:inline-block;
+    font-family: 'Abel', sans-serif;
+    transition: color 0.3s ease;}
+.header .header_menu a:hover{color: #ccc;}
+.header .header_tit{
+    text-align:center; 
+    text-transform:uppercase;
+    margin-top: 10px;
+    font-family: 'Abel', sans-serif;
+}
+.header .header_tit h1{
+    font-size: 30px;
+    color:#fff;
+    background-color:#51b0dc ;
+    font-family: 'Abel', sans-serif;
+    display: inline-block;
+    padding: 5px 30px 5px 30px;
+    letter-spacing: 2px;
+    font-weight: 900;
+    transition : box-shadow 0.25s ease-in-out;
+}
+.header .header_tit h1:hover {
+    box-shadow:inset -9em 0 0 0 #257fac,
+               inset 9em 0 0 0 #257fac;
+}
+.header .header_tit a {
+    font-size: 16px;
+    color: #fff;
+    background-color: #4a9abf;
+    padding: 10px 20px 10px 20px;
+    margin-top: -7px;
+    transition : box-shadow 0.25s ease-in-out;
+}
+
+.header .header_tit a:hover{
+    box-shadow: 
+        0 0 0 5px rgba(75,154,191,0.9) inset,
+        0 0 0 100px rgba(0,0,0.1) inset;
+}
+
+
+.header .header_icon { 
+    display:flex;
+    margin-top:30px;
+    justify-content: center;
+ }
+.header .header_icon il { 
+    text-align: center;
+    display:flex;
+    flex-direction: column;
+    display: inline-block;
+}
+.header .header_icon il a {
+    position: relative;
+    background-color: #3192bf;
+    border-radius: 50%;
+    width:50px; height:50px; color:#fff;
+    display: inline-block;
+    font-size: 35px;
+    line-height:55px;
+}
+.header .header_icon il a span{
+    position: absolute;
+    left: 50%; top:-35px;
+    transform: translateX(-50%);
+    color:black;
+    font-size: 12px;
+    padding: 3px 9px;
+    border-radius: 6px 0;
+}
+
+.header .header_icon il a span:hover{
+    opacity:1;
+}
+
+@media (max-width:1220px){
+    .container{width:100%;}
+    .header{padding:0 15px;}
+}
+
+nav{}
+
+nav .nav{
+    display:flex;
+    justify-content: center;
+}
+
+nav .nav .menu{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:20px;
+}
+
+.nav > div h3 { font-size:18px; color:#25a2d0; font-weight: bold;}
